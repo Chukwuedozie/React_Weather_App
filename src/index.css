@@ -1,13 +1,74 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.app {
+  background-image: url("./assets/cold.jpg");
+  background-size: cover;
+}
+
+.app.warm {
+  background-image: url("./assets/hot.jpg");
+}
+
+main {
+  min-height: 100vh;
+  padding: 30px;
+}
+
+.input {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.input .search-box {
+  width: 100%;
+  border-radius: 7px;
+  background-color: lightgrey;
+  padding: 15px;
+  font-size: larger;
+  border: 0;
+  box-shadow: 3px 5px grey;
+}
+
+.input .search-box:focus {
+  background-color: white;
+}
+
+.location-date {
+  text-align: center;
+}
+
+.location-date .city {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.location-date .date {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.temp {
+  font-size: 100px;
+  font-weight: bolder;
+  background: rgba(128, 128, 128, 0.2);
+  border-radius: 7px;
+  width: fit-content;
+  margin: 30px auto;
+  box-shadow: 5px 5px grey;
+  padding: 10px;
+}
+
+.condition {
+  text-align: center;
+  font-size: 45px;
+  text-shadow: 2px 2px honeydew;
 }
