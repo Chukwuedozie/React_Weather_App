@@ -33,7 +33,7 @@ function App() {
 
     return `${day} ${date} ${month} ${year}`;
     
-  }
+  };
   return (
     
     <div className={(typeof weather.main != "undefined") ? (weather.main.temp > 15? "app warm" : "app") : "app"}>
